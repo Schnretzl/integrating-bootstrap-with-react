@@ -5,6 +5,7 @@ import CharacterDetails from './components/CharacterDetails'
 import Comics from './components/Comics'
 import NavigationBar from './components/NavigationBar'
 import NotFound from './components/NotFound'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
