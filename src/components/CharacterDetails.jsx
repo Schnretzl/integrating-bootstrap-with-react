@@ -1,11 +1,3 @@
-// Task 2: Create Route Components
-//     Create four new components: Home, BrowseCharacters, CharacterDetails, and Comics. The home & comic components can be empty for now, with just a simple return statement and you can reuse your browse & detail components from the previous assignment.import React from 'react';
-
-// Task 2: Dynamic Routes for Character Details
-
-//     Modify the CharacterDetails component to accept a character ID as a route parameter.
-//     Update the BrowseCharacters component to link each character to its details page using the character ID.
-
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";

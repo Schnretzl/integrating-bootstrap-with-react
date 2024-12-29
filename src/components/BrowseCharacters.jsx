@@ -1,9 +1,5 @@
-// Task 2: Create Route Components
-//     Create four new components: Home, BrowseCharacters, CharacterDetails, and Comics. The home & comic components can be empty for now, with just a simple return statement and you can reuse your browse & detail components from the previous assignment.
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import CharacterDetails from "./CharacterDetails.jsx";
 import "./CharacterListStyles.css";
 import { useParams, useNavigate } from "react-router-dom";
 
@@ -49,7 +45,6 @@ const BrowseCharacters = () => {
                     </div>
                 ))}
             </div>
-            {/* {selectedCharacter && <CharacterDetails character={selectedCharacter} />}  */}
         </div>
     );
 };

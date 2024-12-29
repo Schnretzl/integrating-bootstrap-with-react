@@ -1,11 +1,11 @@
-# React Routing and Single-Page-Applications
+# Integrating Bootstrap with React
 
-This is the repo for the React Routing and Single-Page-Applications assignment.
+This is the repo for the Integrating Bootstrap with React assignment.
 
 To run this on your local machine, you will need to have Node.js installed.  Additionally, you will need to have keys to the Marvel API, which you can get for free [here](https://developer.marvel.com/).  In your terminal, run the following commands:
 ```bash
-    git clone https://github.com/schnretzl/react-routing-and-single-page-applications.git
-    cd react-routing-and-single-page-applications
+    git clone https://github.com/schnretzl/integrating-bootstrap-with-react.git
+    cd integrating-bootstrap-with-react
     npm install
 ```
 

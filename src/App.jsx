@@ -1,13 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
-import Home from './Home'
-import BrowseCharacters from './BrowseCharacters'
-import CharacterDetails from './CharacterDetails'
-import Comics from './Comics'
-import NavigationBar from './NavigationBar'
-import NotFound from './NotFound'
-
-// Task 3: Setting Up Routes
-//     In your application's main file, set up routes using BrowserRouter and Route from React Router. Assign each route to the corresponding component.
+import Home from './components/Home'
+import BrowseCharacters from './components/BrowseCharacters'
+import CharacterDetails from './components/CharacterDetails'
+import Comics from './components/Comics'
+import NavigationBar from './components/NavigationBar'
+import NotFound from './components/NotFound'
 
 function App() {
 
