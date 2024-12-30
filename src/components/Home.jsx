@@ -16,29 +16,38 @@
 //         The HomePage component features distinct borders and shadows, enhancing its aesthetic and emphasizing the "Shop Now" button.
 //         Utilize the Card component to display additional content or information, such as featured products or promotions.
 
-import { Button, Container, Card } from 'react-bootstrap';
+// Task 4: Adding a Responsive Image to HomePage
+//     Select an image that represents the theme of your application. For demonstration purposes, assume the image is located in your project at src/assets/welcome-image.jpg.
+//     Import the Image component from React-Bootstrap and use it to add the chosen image to your HomePage component.
+//     Apply React-Bootstrap's responsive image features to ensure the image scales nicely on different screen sizes.
+
+import { Button, Container, Card, Image } from 'react-bootstrap';
 
 const Home = () => {
-
     return (
-        <Container className='bg-light text-dark p-3 border'>
-            <h2>Home</h2>
-            <p>Welcome to the Marvel Comics Store!</p>
-            <Button variant="primary" className='shadow'>Shop Now</Button>
-            <Card className='mt-3'>
-                <Card.Body>
-                    <Card.Title>Featured Product</Card.Title>
-                    <Card.Text>
-                        Check out our latest comic!
-                    </Card.Text>
-                    <Card.Img variant="top" 
-                              src="https://i.annihil.us/u/prod/marvel/i/mg/9/20/651dedab46371.jpg"
-                              style={{ width: '200px', height: 'auto'}}/>
-                    <div className='mt-3'>
-                        <Button variant="secondary shadow">View Details</Button>
-                    </div>
-                </Card.Body>
-            </Card>
+        <Container fluid className="p-0">
+            <Image src='./src/assets/welcome-image.jpg' className='img-fluid w-100 h-auto'/>
+            <Container className="bg-light text-dark p-3 mt-3 border" style={{ maxWidth: '800px' }}>
+                <h2>Home</h2>
+                <p>Welcome to the Marvel Comics Store!</p>
+                <Button variant="primary" className="shadow">Shop Now</Button>
+                <Card className="mt-3">
+                    <Card.Body>
+                        <Card.Title>Featured Product</Card.Title>
+                        <Card.Text>
+                            Check out our latest comic!
+                        </Card.Text>
+                        <Card.Img 
+                            variant="top" 
+                            src="https://i.annihil.us/u/prod/marvel/i/mg/9/20/651dedab46371.jpg"
+                            style={{ width: '200px', height: 'auto' }}
+                        />
+                        <div className="mt-3">
+                            <Button variant="secondary" className="shadow">View Details</Button>
+                        </div>
+                    </Card.Body>
+                </Card>
+            </Container>
         </Container>
     );
 };
